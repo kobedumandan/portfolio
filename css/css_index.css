@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+10&family=Jersey+25&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --bodyColor: #0745a8;
+  --borderColor: #01122e;
+  --panelColor: white;
+  --shadowColor: rgba(3, 0, 33, 0.9);
+  --windowColor: #0452ef;
+  --fontColor: white;
+}
+
+.darkmode {
+  --bodyColor: #0a0e1a;
+  --borderColor: #1a2640;
+  --panelColor: #121825;
+  --shadowColor: rgba(0, 0, 0, 0.6);
+  --windowColor: #1f3b6e;
+  --fontColor: rgb(240, 220, 2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bodyColor);
+}
+
+.white_panel {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.35rem;
+  border: 2px solid var(--borderColor);
+  width: 870px;
+  height: 535px;
+  background-color: var(--panelColor);
+  margin: auto;
+  margin-top: 10vh;
+  box-shadow: 21px 18px 0px var(--shadowColor);
+}
+
+.top_col {
+  flex: none;
+  width: 100%;
+  height: 34px;
+  color: var(--fontColor);
+  border-bottom: 2px solid var(--bodyColor);
+  background-color: var(--windowColor);
+}
+
+.win_name {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19.5px;
+}
+
+.win_btns .holder {
+  float: inline-end;
+  padding-right: 17px;
+  font-size: 14px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.container-fluid {
+    flex: 1;
+}
+
+.container-fluid .col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introductory_text h1{
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 45px;
+  color: #0043ac;
+
+  transform: translateY(-50px);
+}
+
+.name {
+    font-size: 50px;
+}
+
+.introductory_text #autotype_txt {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: medium;
+  font-size: 80px;
+  color: #f69b08;
+}
+
+.typed-cursor {
+    color: #f69b08;
+    font-size: 70px;
+}
