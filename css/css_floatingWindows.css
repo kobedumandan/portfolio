@@ -1,0 +1,39 @@
+:root {
+    --borderColor: #01122e;
+    --shadowColor: rgba(3, 0, 33, 0.9);
+}
+
+.floating-window {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  z-index: 1000;
+  cursor: grab;
+
+  overflow: hidden;
+  border-radius: 0.35rem;
+  border: 2px solid var(--borderColor);
+  width: 430px;
+  height: 500px;
+  box-shadow: 18px 16px 0px var(--shadowColor);
+}
+
+.floating-window .header {
+  cursor: move;
+  background-color: #f8f9fa;
+}
+
+.floating-window .dragging {
+  opacity: 0.9;
+  cursor: grabbing;
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+}
+
+.floating-window .container {
+    height: 100%;
+    background-color: white;
+}

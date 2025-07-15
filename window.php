@@ -1,4 +1,5 @@
 <!-- window.php -->
+
 <div class="card floating-window shadow">
   <div class="card-header d-flex justify-content-between align-items-center">
     <span>Floating Window</span>
